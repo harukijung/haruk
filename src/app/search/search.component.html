@@ -1,0 +1,26 @@
+<h1>Search Scheduler</h1>
+
+<table>
+  <thead>
+      <tr>
+          <th>Item1</th>
+          <th>Item2</th>
+          <th>Item3</th>
+      </tr>
+  </thead>
+  <tbody>
+          <tr *ngFor="let user of users">
+                  <td>{{user.name}}</td>
+                  <td>{{user.name}}</td>
+                  <td>{{user.name}}</td>
+          </tr>
+  </tbody>
+
+</table>
+
+<button (click)='alertMessage()'>Alert</button>
+<br/>
+<input [(ngModel)]='name'/>
+<div>{{name}}</div>
+<input type="text" value='{{defaultValue}}'>
+<input type="text" [value]='defaultValue'>
